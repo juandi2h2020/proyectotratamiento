@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Sampler</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Web Sampler</h1>
+
+    <input type="file" id="audioFile" accept="audio/*">
+
+    <div class="wave-controls">
+        <button id="zoomInBtn">🔍+</button>
+        <button id="zoomOutBtn">🔍-</button>
+    </div>
+
+    <div class="wave-container">
+        <canvas id="waveform" width="1500" height="120"></canvas>
+    </div>
+
+    <div class="controls">
+        <label>
+            Duración del sample:
+            <span id="durationLabel">2.0s</span>
+        </label>
+        <input type="range" id="durationSlider" min="2" max="6" step="0.1" value="2">
+    </div>
+
+    <button id="playBtn">▶ Reproducir</button>
+    <button id="exportBtn">⬇ Descargar sample</button>
+
+    <div id="info">
+        <p><strong>Tempo:</strong> <span id="tempo">---</span></p>
+        <p><strong>Tonalidades probables:</strong></p>
+        <ul id="keys"></ul>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

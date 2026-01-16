@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1d2671, #c33764);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    background: white;
+    width: 540px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.wave-controls {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 5px;
+}
+
+.wave-controls button {
+    margin-left: 5px;
+    padding: 5px 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    background: #555;
+    color: white;
+    cursor: pointer;
+}
+
+.wave-container {
+    overflow-x: auto;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+canvas {
+    display: block;
+    height: 120px;
+    cursor: pointer;
+}
+
+.controls {
+    margin-top: 15px;
+}
+
+input[type="range"] {
+    width: 100%;
+}
+
+button {
+    margin-top: 12px;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #ff512f, #dd2476);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+#info {
+    margin-top: 20px;
+    background: #f4f4f4;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+ul {
+    margin-left: 20px;
+}
